@@ -15,6 +15,7 @@ public class Client {
             CompletableFuture.runAsync(clientListener::receiveMessage);
 
             var outputStream = socket.getOutputStream();
+            System.out.println("Hahaha");
             while (true) {
                 var msg = sc.nextLine();
                 outputStream.write(msg.getBytes());
