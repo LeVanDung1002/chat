@@ -16,6 +16,7 @@ public class Client {
 
             var outputStream = socket.getOutputStream();
             System.out.println("Hahaha2");
+            System.out.println("Hahaha1");
             while (true) {
                 var msg = sc.nextLine();
                 outputStream.write(msg.getBytes());
